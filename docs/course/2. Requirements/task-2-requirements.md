@@ -4,7 +4,7 @@
 Rukaiya Tabassum (2420183), Meharab Hossen Opi (2420832) · **Faculty:** Md Masum Billah
 
 Source requirements: [PRD v0.2](../../prd.md). All diagrams are in [`diagrams/`](diagrams/) as `.svg` and `.png`,
-with the editable source (`.dot` or `_tools/draw_*.py`).
+with the `.dot` source for the Graphviz ones.
 
 Contents: 2.1 Stakeholders · 2.2 Power–interest grid · 2.3 Elicitation · 2.4 Requirements catalogue ·
 2.5 User stories · 2.6 Use-case diagram · 2.7 Use-case narrative · 2.8 Analysis classes · 2.9 CRC cards ·
@@ -44,11 +44,12 @@ launch (risk: permission, see PRD Q3). S6 is handled through its sandbox and ter
 | # | Technique | With whom | When | How | Output |
 |---|---|---|---|---|---|
 | E1 | **Semi-structured interviews** | 5 learners, 3 tutors (A / A- holders), 1 faculty advisor | Sprint 2, week 3 | 20–30 min each, in person or on Meet, two team members (one asks, one notes) | Interview notes → candidate FRs, pricing and refund opinions |
-| E2 | **Questionnaire (Google Form)** | IUB students via department Facebook groups; target ≥ 50 replies | Sprint 2, weeks 3–4 | 12 closed + 3 open questions: hard courses, willingness to pay, payment method, trust signals | Numbers for price (৳500), the demand estimate and payment-method mix |
-| E3 | **Observation / document analysis** | Existing "tutor wanted" posts in IUB Facebook groups and current coaching flyers | Sprint 2, week 3 | Collect 30 posts; code them by course, price, problems mentioned | Real course list for the seed data; problems like no-shows and no refunds |
+| E2 | **Competitor analysis** | 5–6 tutoring options IUB students use today: 2–3 coaching centres near campus (their pages and flyers) and 2–3 online learning platforms (for example 10 Minute School, Udemy, YouTube course channels) | Sprint 2, week 3 | One comparison sheet for each option: price per course or month, how well it matches the IUB syllabus, live or recorded, free trial or demo, refund rule, payment methods | A price range that shows whether ৳500 per semester is fair; features worth copying and gaps we can fill (IUB syllabus, verified tutors, refunds) |
+| E3 | **Observation / document analysis** | Existing "tutor wanted" posts in IUB Facebook groups | Sprint 2, week 3 | Collect 30 posts; code them by course, price, problems mentioned | Real course list for the seed data; problems like no-shows and no refunds |
 
-The three techniques cross-check one another: interviews give depth, the survey gives numbers, and
-observation shows what people actually do rather than what they say.
+The three techniques cross-check one another: interviews tell us what users want, competitor
+analysis shows what they pay and get elsewhere today (our price reference), and observation shows
+what people actually do rather than what they say.
 
 ### Five context-free questions (asked at the start of every E1 interview)
 

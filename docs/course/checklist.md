@@ -2,7 +2,7 @@
 
 Updated 2026-10-26 (Tasks 1–3 drafted) · Requirements: [requirements.md](requirements.md)
 Status: ✅ done · 🟡 partial (source to build from) · ⬜ not started · 📊 diagram
-Each task lives in its own numbered folder with `diagrams/` (SVG + PNG + source). Rebuild diagrams: `bash docs/course/_tools/build.sh`. Progress slides: [`slides/`](slides/).
+Each task lives in its own numbered folder with `diagrams/` (SVG + PNG; `.dot` source for the Graphviz ones).
 
 ## Summary
 

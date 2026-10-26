@@ -12,11 +12,9 @@ semester project, Autumn 2026, at Independent University, Bangladesh. Faculty: M
 | 1 Software Process | [`docs/course/1. Software Process`](docs/course/1.%20Software%20Process/task-1-software-process.md) |
 | 2 Requirements Engineering | [`docs/course/2. Requirements`](docs/course/2.%20Requirements/task-2-requirements.md) |
 | 3 Software Design | [`docs/course/3. Design`](docs/course/3.%20Design/task-3-design.md) |
-| Progress slides | [`docs/course/slides`](docs/course/slides/) |
 | Checklist for all 8 tasks | [`docs/course/checklist.md`](docs/course/checklist.md) |
 
-Each task folder has a `diagrams/` folder with every diagram as PNG and SVG, plus the editable source.
-To rebuild the diagrams, run `bash docs/course/_tools/build.sh` (needs Python 3, Graphviz and librsvg).
+Each task folder has a `diagrams/` folder with every diagram as PNG and SVG; the Graphviz ones also have their `.dot` source.
 
 ## Product documents
 
