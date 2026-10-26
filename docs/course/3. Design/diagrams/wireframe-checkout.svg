@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="960" viewBox="0 0 1040 960">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#3e4c59"/></marker>
+  <marker id="open" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10" fill="none" stroke="#3e4c59" stroke-width="1.5"/></marker>
+  <marker id="tri" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+    <path d="M0,0 L12,6 L0,12 z" fill="white" stroke="#3e4c59" stroke-width="1.3"/></marker>
+  <marker id="arrowred" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#b91c1c"/></marker>
+</defs>
+<rect x="0" y="0" width="1040" height="960" fill="white"/>
+<text x="520" y="34" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#1f2933">Wireframe 2: Checkout (mobile, 390 × 844)</text>
+<rect x="30" y="80" width="410" height="864" rx="36" fill="#d9dee4" stroke="#1f2933" stroke-width="2"/>
+<rect x="40" y="90" width="390" height="844" rx="26" fill="white" stroke="#9aa5b1" stroke-width="1"/>
+<text x="64" y="116" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="bold" fill="#52606d">9:41</text>
+<text x="406" y="116" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" fill="#52606d">4G ▮▮▮</text>
+<text x="60" y="154" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="20" text-anchor="start" font-weight="bold" fill="#1f2933">✕</text>
+<text x="235.0" y="152" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="middle" font-weight="bold" fill="#1f2933">Checkout</text>
+<line x1="40.0" y1="170.0" x2="430.0" y2="170.0" stroke="#e4e7eb" stroke-width="1"/>
+<circle cx="120" cy="202" r="13" fill="#2563eb" stroke="#2563eb" stroke-width="1.6"/>
+<text x="120" y="207" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="white">1</text>
+<text x="120" y="235" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Offering</text>
+<line x1="135.0" y1="202.0" x2="220.0" y2="202.0" stroke="#2563eb" stroke-width="2"/>
+<circle cx="235" cy="202" r="13" fill="#2563eb" stroke="#2563eb" stroke-width="1.6"/>
+<text x="235" y="207" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="white">2</text>
+<text x="235" y="235" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Pay</text>
+<line x1="250.0" y1="202.0" x2="335.0" y2="202.0" stroke="#cbd2d9" stroke-width="2"/>
+<circle cx="350" cy="202" r="13" fill="white" stroke="#2563eb" stroke-width="1.6"/>
+<text x="350" y="207" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#2563eb">3</text>
+<text x="350" y="235" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Done</text>
+<circle cx="420" cy="190" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="420" y="195" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">1</text>
+<rect x="56" y="256" width="358" height="112" rx="10" fill="#f5f7fa" stroke="#cbd2d9" stroke-width="1"/>
+<text x="70" y="284" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="start" font-weight="bold" fill="#1f2933">CSE211 · Tanvir A.</text>
+<text x="70" y="308" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">Semester subscription · Autumn 2026</text>
+<line x1="70.0" y1="324.0" x2="400.0" y2="324.0" stroke="#cbd2d9" stroke-width="1"/>
+<text x="70" y="352" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="start" font-weight="bold" fill="#1f2933">Total</text>
+<text x="400" y="352" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="20" text-anchor="end" font-weight="bold" fill="#1f2933">৳500</text>
+<circle cx="420" cy="266" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="420" y="271" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">2</text>
+<rect x="56" y="382" width="358" height="64" rx="10" fill="#e7f6ec" stroke="#15803d" stroke-width="1"/>
+<text x="70" y="408" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#15803d">Full refund until 9 Nov 2026</text>
+<text x="70" y="430" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" fill="#15803d">or before the 3rd live class, whichever is first</text>
+<circle cx="420" cy="390" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="420" y="395" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">3</text>
+<text x="60" y="482" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="start" font-weight="bold" fill="#1f2933">Pay with</text>
+<rect x="56" y="496" width="358" height="52" rx="10" fill="#e8f0fe" stroke="#2563eb" stroke-width="1.6"/>
+<circle cx="82" cy="522" r="9" fill="white" stroke="#2563eb" stroke-width="2"/>
+<circle cx="82" cy="522" r="4.5" fill="#2563eb" stroke="#2563eb" stroke-width="0"/>
+<text x="102" y="527" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="start" font-weight="bold" fill="#1f2933">bKash  (used last time)</text>
+<rect x="56" y="558" width="358" height="52" rx="10" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<circle cx="82" cy="584" r="9" fill="white" stroke="#9aa5b1" stroke-width="2"/>
+<text x="102" y="589" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="start" font-weight="normal" fill="#1f2933">Nagad</text>
+<rect x="56" y="620" width="358" height="52" rx="10" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<circle cx="82" cy="646" r="9" fill="white" stroke="#9aa5b1" stroke-width="2"/>
+<text x="102" y="651" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="start" font-weight="normal" fill="#1f2933">Debit / credit card</text>
+<circle cx="420" cy="504" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="420" y="509" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">4</text>
+<rect x="56" y="694" width="358" height="54" rx="10" fill="white" stroke="#cbd2d9" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="70" y="717" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" fill="#1f2933">You approve the payment in the bKash app.</text>
+<text x="70" y="736" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" fill="#52606d">Proxy Courses never sees your PIN.</text>
+<circle cx="420" cy="702" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="420" y="707" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">5</text>
+<rect x="40" y="822" width="390" height="112" rx="0" fill="white" stroke="#e4e7eb" stroke-width="1"/>
+<rect x="56" y="838" width="358" height="52" rx="10" fill="#2563eb" stroke="#2563eb" stroke-width="1.5"/>
+<text x="235.0" y="869.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="middle" font-weight="bold" fill="white">Pay ৳500 with bKash</text>
+<text x="235.0" y="912" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#2563eb">Back to offering</text>
+<circle cx="420" cy="838" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="420" y="843" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">6</text>
+<circle cx="502" cy="115" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="502" y="120" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">1</text>
+<text x="524" y="120" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Progress + exit always visible</text>
+<text x="524" y="139.6" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">“Step 2 of 3” lowers memory load; ✕ lets the user leave at</text>
+<text x="524" y="157.79999999999998" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">any time with nothing charged (Mandel rule 1: user in</text>
+<text x="524" y="175.99999999999997" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">control).</text>
+<circle cx="502" cy="203.19999999999996" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="502" y="208.19999999999996" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">2</text>
+<text x="524" y="208.19999999999996" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Summary in the user's words</text>
+<text x="524" y="227.79999999999995" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">Course code, tutor, semester and total, so the learner can</text>
+<text x="524" y="245.99999999999994" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">confirm without going back to the offering page.</text>
+<circle cx="502" cy="273.19999999999993" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="502" y="278.19999999999993" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">3</text>
+<text x="524" y="278.19999999999993" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Refund rule as a real date</text>
+<text x="524" y="297.79999999999995" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">Turns the rule (FR-25, win-win 2.13) into a date the</text>
+<text x="524" y="315.99999999999994" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">learner doesn't have to work out. Green box = reassurance,</text>
+<text x="524" y="334.19999999999993" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">same meaning across the app.</text>
+<circle cx="502" cy="361.3999999999999" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="502" y="366.3999999999999" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">4</text>
+<text x="524" y="366.3999999999999" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Sensible default, easy to change</text>
+<text x="524" y="385.99999999999994" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">Last-used method is pre-selected; each option is a 52 px</text>
+<text x="524" y="404.19999999999993" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">tall row, easy to tap with a thumb.</text>
+<circle cx="502" cy="431.3999999999999" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="502" y="436.3999999999999" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">5</text>
+<text x="524" y="436.3999999999999" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Trust note</text>
+<text x="524" y="455.99999999999994" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">Says where approval happens and that card or PIN data is</text>
+<text x="524" y="474.19999999999993" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">never stored (NFR-06).</text>
+<circle cx="502" cy="501.3999999999999" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="502" y="506.3999999999999" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">6</text>
+<text x="524" y="506.3999999999999" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Button says exactly what happens</text>
+<text x="524" y="525.9999999999999" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">“Pay ৳500 with bKash” updates with the method chosen. Same</text>
+<text x="524" y="544.1999999999999" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">place and style as Subscribe on the previous screen</text>
+<text x="524" y="562.4" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">(Mandel rule 3: consistency).</text>
+</svg>

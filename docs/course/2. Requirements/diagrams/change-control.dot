@@ -1,0 +1,36 @@
+// Change-control workflow for baselined requirements.
+digraph CC {
+  graph [rankdir=TB, fontname="Noto Sans", fontsize=20, labelloc=t, nodesep=0.5, ranksep=0.5, pad=0.4,
+         label=<<B>Proxy Courses: requirements change-control workflow</B>>];
+  node [shape=box, style="rounded,filled", fillcolor="#e8f0fe", color="#2563eb", penwidth=1.6,
+        fontname="Noto Sans", fontsize=13, margin="0.25,0.12", width=3.2];
+  edge [fontname="Noto Sans", fontsize=12, color="#3e4c59", penwidth=1.3];
+
+  s  [shape=circle, label="", width=0.25, style=filled, fillcolor="#1f2933", color="#1f2933"];
+  e  [shape=doublecircle, label="", width=0.2, style=filled, fillcolor="#1f2933", color="#1f2933"];
+
+  A [label=<<B>1. Submit change request (CR)</B><BR/><FONT POINT-SIZE="11">anyone · GitHub issue, "Change request" template:<BR/>what, why, which FR/NFR, urgency</FONT>>];
+  B [label=<<B>2. Log &amp; classify</B><BR/><FONT POINT-SIZE="11">product owner · CR-ID, type (new / modify / delete),<BR/>priority (MoSCoW)</FONT>>];
+  C [label=<<B>3. Impact analysis</B><BR/><FONT POINT-SIZE="11">a developer · use the traceability matrix: affected UCs,<BR/>modules, tests, documents; effort (story points); risk</FONT>>];
+  D [shape=diamond, style=filled, fillcolor="#fdf3e1", color="#b45309", width=2.6, height=1.3,
+     label=<<B>4. CCB decision</B><BR/><FONT POINT-SIZE="11">PO + scrum master + QA lead</FONT>>];
+  F [label=<<B>5. Update baseline</B><BR/><FONT POINT-SIZE="11">edit PRD / SRS, UC, ER, traceability;<BR/>bump version (v1.0 → v1.1); git tag req-baseline-v1.1</FONT>>, fillcolor="#e7f6ec", color="#15803d"];
+  G [label=<<B>6. Plan &amp; implement</B><BR/><FONT POINT-SIZE="11">add to sprint backlog · branch · pair work · PR review</FONT>>, fillcolor="#e7f6ec", color="#15803d"];
+  H [label=<<B>7. Verify</B><BR/><FONT POINT-SIZE="11">new + regression tests pass in CI · reviewer signs off</FONT>>, fillcolor="#e7f6ec", color="#15803d"];
+  I [label=<<B>8. Close CR &amp; notify</B><BR/><FONT POINT-SIZE="11">stakeholders told in sprint review</FONT>>];
+  R [label=<<B>Rejected</B><BR/><FONT POINT-SIZE="11">reason recorded, requester told</FONT>>, fillcolor="#fdecec", color="#b91c1c"];
+  Q [label=<<B>Deferred</B><BR/><FONT POINT-SIZE="11">kept in product backlog;<BR/>re-enters step 2 next sprint</FONT>>, fillcolor="#eef1f4", color="#52606d"];
+  X [shape=note, style=filled, fillcolor="#fdf3e1", color="#b45309", width=2.8,
+     label=<<FONT POINT-SIZE="11">If the change alters a graded deliverable<BR/>or scope, consult the course faculty<BR/>before approving.</FONT>>];
+
+  s -> A -> B -> C -> D;
+  D -> F [label="  approve"];
+  D -> R [label="  reject"];
+  D -> Q [label="  defer"];
+  F -> G -> H -> I -> e;
+  H -> G [label="  tests fail", style=dashed, constraint=false];
+  R -> e;
+  X -> D [style=dotted, arrowhead=none];
+  { rank=same; R; F; Q; }
+  { rank=same; X; D; }
+}

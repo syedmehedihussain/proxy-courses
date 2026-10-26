@@ -1,0 +1,131 @@
+// Proxy Courses ER diagram, crow's-foot (IE) notation.
+// Solid line = identifying relationship, dashed = non-identifying.
+// Double border = weak entity. PK underlined; partial key underlined dashed note.
+digraph ER {
+  graph [rankdir=LR, fontname="Noto Sans", fontsize=20, labelloc=t, nodesep=0.45, ranksep=1.1, pad=0.4,
+         label=<<B>Proxy Courses: entity–relationship diagram (crow's-foot notation)</B>>];
+  node  [shape=plain, fontname="Noto Sans", fontsize=12];
+  edge  [fontname="Noto Sans", fontsize=11, color="#3e4c59", fontcolor="#52606d", dir=both, arrowsize=1.1, penwidth=1.3];
+
+  USER [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>USER</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT"><U>user_id</U> PK</TD></TR>
+    <TR><TD ALIGN="LEFT">email (unique, @iub.edu.bd)</TD></TR>
+    <TR><TD ALIGN="LEFT">name, student_id, department</TD></TR>
+    <TR><TD ALIGN="LEFT">roles {LEARNER, TUTOR, ADVISOR, ADMIN}</TD></TR>
+    <TR><TD ALIGN="LEFT">password_hash, email_verified_at</TD></TR></TABLE>>];
+
+  COURSE [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>COURSE</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT"><U>course_id</U> PK</TD></TR>
+    <TR><TD ALIGN="LEFT">code (unique, e.g. CSE211)</TD></TR>
+    <TR><TD ALIGN="LEFT">title</TD></TR></TABLE>>];
+
+  TUTOR_APPLICATION [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>TUTOR_APPLICATION</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT"><U>application_id</U> PK</TD></TR>
+    <TR><TD ALIGN="LEFT">user_id FK, course_id FK</TD></TR>
+    <TR><TD ALIGN="LEFT">grade {A, A-, …}</TD></TR>
+    <TR><TD ALIGN="LEFT">transcript_key, status</TD></TR>
+    <TR><TD ALIGN="LEFT">reviewed_by FK, reviewed_at</TD></TR></TABLE>>];
+
+  OFFERING [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>OFFERING</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT"><U>offering_id</U> PK</TD></TR>
+    <TR><TD ALIGN="LEFT">tutor_id FK, course_id FK</TD></TR>
+    <TR><TD ALIGN="LEFT">semester, title, outline</TD></TR>
+    <TR><TD ALIGN="LEFT">intro_video_url, status</TD></TR>
+    <TR><TD ALIGN="LEFT">rating_avg, rating_count</TD></TR></TABLE>>];
+
+  MATERIAL [label=<<TABLE BORDER="3" STYLE="ROUNDED" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#6d28d9">
+    <TR><TD BGCOLOR="#6d28d9"><FONT COLOR="white"><B>MATERIAL</B>  (weak entity)</FONT></TD></TR>
+    <TR><TD ALIGN="LEFT"><U>offering_id</U> PK, FK (owner)</TD></TR>
+    <TR><TD ALIGN="LEFT"><U>material_no</U> partial key</TD></TR>
+    <TR><TD ALIGN="LEFT">kind {RECORDING, NOTE}</TD></TR>
+    <TR><TD ALIGN="LEFT">title, url / file_key</TD></TR></TABLE>>];
+
+  DEMO [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>DEMO</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT"><U>demo_id</U> PK</TD></TR>
+    <TR><TD ALIGN="LEFT">offering_id FK</TD></TR>
+    <TR><TD ALIGN="LEFT">starts_at, meeting_url</TD></TR>
+    <TR><TD ALIGN="LEFT">seat_limit</TD></TR></TABLE>>];
+
+  DEMO_BOOKING [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#15803d">
+    <TR><TD BGCOLOR="#15803d"><FONT COLOR="white"><B>DEMO_BOOKING</B> (associative)</FONT></TD></TR>
+    <TR><TD ALIGN="LEFT"><U>demo_id</U> PK, FK</TD></TR>
+    <TR><TD ALIGN="LEFT"><U>learner_id</U> PK, FK</TD></TR>
+    <TR><TD ALIGN="LEFT">booked_at, cancelled_at</TD></TR></TABLE>>];
+
+  SUBSCRIPTION [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>SUBSCRIPTION</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT"><U>subscription_id</U> PK</TD></TR>
+    <TR><TD ALIGN="LEFT">learner_id FK, offering_id FK</TD></TR>
+    <TR><TD ALIGN="LEFT">status, activated_at</TD></TR>
+    <TR><TD ALIGN="LEFT">unique (learner_id, offering_id)</TD></TR></TABLE>>];
+
+  PAYMENT [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>PAYMENT</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT"><U>payment_id</U> PK</TD></TR>
+    <TR><TD ALIGN="LEFT">subscription_id FK</TD></TR>
+    <TR><TD ALIGN="LEFT">amount, method, status</TD></TR>
+    <TR><TD ALIGN="LEFT">gateway_txn_id (unique)</TD></TR>
+    <TR><TD ALIGN="LEFT">tutor_share, platform_share</TD></TR></TABLE>>];
+
+  REFUND_REQUEST [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>REFUND_REQUEST</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT"><U>refund_id</U> PK</TD></TR>
+    <TR><TD ALIGN="LEFT">subscription_id FK (unique)</TD></TR>
+    <TR><TD ALIGN="LEFT">reason, status</TD></TR>
+    <TR><TD ALIGN="LEFT">decided_by FK, decided_at</TD></TR></TABLE>>];
+
+  REVIEW [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>REVIEW</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT"><U>review_id</U> PK</TD></TR>
+    <TR><TD ALIGN="LEFT">subscription_id FK (unique)</TD></TR>
+    <TR><TD ALIGN="LEFT">rating 1–5, text</TD></TR></TABLE>>];
+
+  ADVISING_SLOT [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>ADVISING_SLOT</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT"><U>slot_id</U> PK</TD></TR>
+    <TR><TD ALIGN="LEFT">advisor_id FK</TD></TR>
+    <TR><TD ALIGN="LEFT">booked_by FK (nullable)</TD></TR>
+    <TR><TD ALIGN="LEFT">starts_at, location / url</TD></TR></TABLE>>];
+
+  PAYOUT [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>PAYOUT</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT"><U>payout_id</U> PK</TD></TR>
+    <TR><TD ALIGN="LEFT">tutor_id FK, month</TD></TR>
+    <TR><TD ALIGN="LEFT">gross, refunds, net, status</TD></TR></TABLE>>];
+
+  LEGEND [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="5" COLOR="#9aa5b1" BGCOLOR="#f5f7fa">
+    <TR><TD ALIGN="LEFT"><B>Reading the line ends</B></TD></TR>
+    <TR><TD ALIGN="LEFT">┼┼  exactly one (1..1): cardinality 1, modality mandatory</TD></TR>
+    <TR><TD ALIGN="LEFT">○┼  zero or one (0..1): modality optional</TD></TR>
+    <TR><TD ALIGN="LEFT">○&lt;  zero or many (0..*)</TD></TR>
+    <TR><TD ALIGN="LEFT">┼&lt;  one or many (1..*)</TD></TR>
+    <TR><TD ALIGN="LEFT">solid = identifying · dashed = non-identifying</TD></TR>
+    <TR><TD ALIGN="LEFT">double rounded border = weak entity</TD></TR></TABLE>>];
+
+  // arrowtail = end at the first node, arrowhead = end at the second node
+  USER -> TUTOR_APPLICATION [label="submits", arrowtail=teetee, arrowhead=crowodot, style=dashed];
+  COURSE -> TUTOR_APPLICATION [label="for", arrowtail=teetee, arrowhead=crowodot, style=dashed];
+  USER -> OFFERING [label="teaches", arrowtail=teetee, arrowhead=crowodot, style=dashed];
+  COURSE -> OFFERING [label="offered as", arrowtail=teetee, arrowhead=crowodot, style=dashed];
+  OFFERING -> MATERIAL [label="contains\n(identifying)", arrowtail=teetee, arrowhead=crowodot, penwidth=2.4, color="#6d28d9"];
+  OFFERING -> DEMO [label="has", arrowtail=teetee, arrowhead=crowodot, style=dashed];
+  DEMO -> DEMO_BOOKING [label="reserved by", arrowtail=teetee, arrowhead=crowodot];
+  USER -> DEMO_BOOKING [label="books", arrowtail=teetee, arrowhead=crowodot];
+  USER -> SUBSCRIPTION [label="subscribes", arrowtail=teetee, arrowhead=crowodot, style=dashed];
+  OFFERING -> SUBSCRIPTION [label="sold as", arrowtail=teetee, arrowhead=crowodot, style=dashed];
+  SUBSCRIPTION -> PAYMENT [label="paid by", arrowtail=teetee, arrowhead=crowtee, style=dashed];
+  SUBSCRIPTION -> REFUND_REQUEST [label="may get", arrowtail=teetee, arrowhead=teeodot, style=dashed];
+  SUBSCRIPTION -> REVIEW [label="reviewed in", arrowtail=teetee, arrowhead=teeodot, style=dashed];
+  USER -> ADVISING_SLOT [label="offers (advisor)", arrowtail=teetee, arrowhead=crowodot, style=dashed];
+  USER -> ADVISING_SLOT [label="books (student)", arrowtail=teeodot, arrowhead=crowodot, style=dashed];
+  USER -> PAYOUT [label="receives (tutor)", arrowtail=teetee, arrowhead=crowodot, style=dashed];
+
+  { rank=same; USER; COURSE; }
+  { rank=same; MATERIAL; DEMO_BOOKING; PAYMENT; REFUND_REQUEST; REVIEW; }
+  { rank=sink; LEGEND; }
+}

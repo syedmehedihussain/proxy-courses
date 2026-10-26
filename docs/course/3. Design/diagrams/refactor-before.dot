@@ -1,0 +1,38 @@
+// BEFORE: first-draft "god class" SubscriptionManager.
+digraph Before {
+  graph [rankdir=LR, fontname="Noto Sans", fontsize=20, labelloc=t, nodesep=0.3, ranksep=1.2, pad=0.4,
+         label=<<B>Before refactor: SubscriptionManager (god class)</B><BR/><FONT POINT-SIZE="13">coincidental / logical cohesion · content, common, control and external coupling</FONT>>];
+  node [fontname="Noto Sans", fontsize=12];
+  edge [color="#b91c1c", penwidth=1.2, arrowsize=0.8, fontname="Noto Sans", fontsize=10, fontcolor="#b91c1c"];
+
+  God [shape=plain, label=<<TABLE BORDER="2" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#b91c1c" BGCOLOR="#fdecec">
+    <TR><TD BGCOLOR="#b91c1c"><FONT COLOR="white"><B>SubscriptionManager</B>  (≈1,100 LOC, 15 methods)</FONT></TD></TR>
+    <TR><TD ALIGN="LEFT">+ register(email, pw)  · + login()</TD></TR>
+    <TR><TD ALIGN="LEFT">+ searchOfferings(code)</TD></TR>
+    <TR><TD ALIGN="LEFT">+ subscribe(user, offering)</TD></TR>
+    <TR><TD ALIGN="LEFT">+ callBkashApi() · + callNagadApi() · + callCardApi()</TD></TR>
+    <TR><TD ALIGN="LEFT">+ handleCallback(data, <B>mode</B>: "bkash" | "nagad" | "refund")</TD></TR>
+    <TR><TD ALIGN="LEFT">+ calcSplit(amount)  // reads global CONFIG.split</TD></TR>
+    <TR><TD ALIGN="LEFT">+ approveRefund(id) · + buildPayoutCsv(month)</TD></TR>
+    <TR><TD ALIGN="LEFT">+ sendEmail(to, html) · + renderReceiptHtml()</TD></TR>
+    <TR><TD ALIGN="LEFT">+ writeAudit(msg) · + validateTranscript(file)</TD></TR>
+    </TABLE>>];
+
+  node [shape=box, style="rounded,filled", fillcolor="#eef1f4", color="#52606d"];
+  CFG  [label="global CONFIG\n(prices, split %, keys)"];
+  BK   [label="bKash SDK"];
+  NG   [label="Nagad SDK"];
+  CARD [label="Card SDK"];
+  SMTP [label="SMTP client"];
+  DBT  [label="Payment / User /\nOffering tables\n(raw SQL)"];
+  UIa  [label="Checkout page"];
+  UIb  [label="Admin page"];
+  UIc  [label="Search page"];
+
+  UIa -> God; UIb -> God; UIc -> God;
+  God -> CFG [label="common"];
+  God -> BK [label="external"]; God -> NG [label="external"]; God -> CARD [label="external"];
+  God -> SMTP;
+  God -> DBT [label="content\n(edits other\nmodules' rows)"];
+  UIb -> God [label="control flag\nmode=\"refund\"", style=dashed];
+}

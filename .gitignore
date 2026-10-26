@@ -1,0 +1,19 @@
+# Cherry uploads and reports
+/cherry/
+
+# Dependencies and build output
+node_modules/
+.next/
+out/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# Local env and uploads
+.env
+.env*.local
+uploads/
+
+# Planner scratch
+_project/tmp/

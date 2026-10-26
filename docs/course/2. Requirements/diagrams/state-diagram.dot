@@ -1,0 +1,36 @@
+// Proxy Courses: Subscription state machine. Transition label = event [guard] / action.
+digraph Subscription {
+  graph [rankdir=TB, fontname="Noto Sans", fontsize=20, labelloc=t, nodesep=1.2, ranksep=0.9, pad=0.4,
+         label=<<B>Proxy Courses: Subscription state diagram</B><BR/><FONT POINT-SIZE="13">Transition label = event [guard] / action</FONT>>];
+  node  [shape=box, style="rounded,filled", fillcolor="#e8f0fe", color="#2563eb", penwidth=1.8,
+         fontname="Noto Sans", fontsize=14, margin="0.25,0.15"];
+  edge  [fontname="Noto Sans", fontsize=11, color="#3e4c59", fontcolor="#1f2933", penwidth=1.3];
+
+  start [shape=circle, width=0.28, label="", style=filled, fillcolor="#1f2933", color="#1f2933"];
+  end1  [shape=doublecircle, width=0.22, label="", style=filled, fillcolor="#1f2933", color="#1f2933"];
+  end2  [shape=doublecircle, width=0.22, label="", style=filled, fillcolor="#1f2933", color="#1f2933"];
+  end3  [shape=doublecircle, width=0.22, label="", style=filled, fillcolor="#1f2933", color="#1f2933"];
+
+  Pending   [label=<<B>PendingPayment</B><BR/><FONT POINT-SIZE="11">entry / show gateway page</FONT>>];
+  Active    [label=<<B>Active</B><BR/><FONT POINT-SIZE="11">do / allow materials, live classes</FONT>>, fillcolor="#e7f6ec", color="#15803d"];
+  Cancelled [label=<<B>Cancelled</B><BR/><FONT POINT-SIZE="11">no access granted</FONT>>, fillcolor="#eef1f4", color="#52606d"];
+  RefundRequested [label=<<B>RefundRequested</B><BR/><FONT POINT-SIZE="11">do / keep access while in admin queue</FONT>>, fillcolor="#fdf3e1", color="#b45309"];
+  Refunded  [label=<<B>Refunded</B><BR/><FONT POINT-SIZE="11">entry / revoke access</FONT>>, fillcolor="#fdecec", color="#b91c1c"];
+  Expired   [label=<<B>Expired</B><BR/><FONT POINT-SIZE="11">entry / revoke access</FONT>>, fillcolor="#eef1f4", color="#52606d"];
+
+  start -> Pending [label="subscribe(offering)\n[email verified ∧ no Active subscription to it]\n/ create Payment(PENDING), redirect to gateway"];
+  Pending -> Active [label="paymentSucceeded(txn)\n[signature valid ∧ amount = ৳500 ∧ txn not seen]\n/ mark Payment PAID, store 70/30 split,\nemail receipt"];
+  Pending -> Cancelled [label="paymentFailed ∨ timeout(30 min)\n[no successful txn]\n/ mark Payment FAILED"];
+  Pending -> Pending [label="retryPayment\n[attempts < 3]\n/ create new Payment(PENDING)"];
+  Active -> RefundRequested [label="requestRefund(reason)\n[inside refund window]\n/ add to admin queue, notify admin"];
+  RefundRequested -> Refunded [label="approveRefund\n[actor is ADMIN]\n/ gateway.refund(), reverse tutor share,\naudit log, email learner"];
+  RefundRequested -> Active [label="rejectRefund(reason)\n[actor is ADMIN ∧ reason given]\n/ email learner the reason"];
+  Active -> Expired [label="semesterEnded\n[today > semester end date]\n/ revoke access, ask for review"];
+  Cancelled -> end1;
+  Refunded -> end2;
+  Expired -> end3;
+
+  { rank=same; Cancelled; Active; }
+  { rank=same; end2; end3; }
+  { rank=same; RefundRequested; Expired; }
+}

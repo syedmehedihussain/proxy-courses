@@ -1,0 +1,57 @@
+// AFTER: the god class split into cohesive services behind interfaces.
+digraph After {
+  graph [rankdir=LR, fontname="Noto Sans", fontsize=20, labelloc=t, nodesep=0.35, ranksep=0.9, pad=0.4,
+         label=<<B>After refactor: single-purpose classes, interfaces at the edges</B><BR/><FONT POINT-SIZE="13">functional cohesion · data coupling (parameters only) · dependency inversion for gateways</FONT>>];
+  node [shape=plain, fontname="Noto Sans", fontsize=12];
+  edge [color="#15803d", penwidth=1.2, arrowsize=0.8, fontname="Noto Sans", fontsize=10, fontcolor="#15803d"];
+
+  SS [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb" BGCOLOR="#e8f0fe">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>SubscriptionService</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT">+ start(learnerId, offeringId, method)</TD></TR>
+    <TR><TD ALIGN="LEFT">+ onPaymentResult(result)</TD></TR>
+    <TR><TD ALIGN="LEFT">+ requestRefund(subId, reason)</TD></TR></TABLE>>];
+  PS [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb" BGCOLOR="#e8f0fe">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>PaymentService</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT">+ createCheckout(order)</TD></TR>
+    <TR><TD ALIGN="LEFT">+ verifyCallback(payload): PaymentResult</TD></TR>
+    <TR><TD ALIGN="LEFT">+ refund(paymentId)</TD></TR></TABLE>>];
+  GWI [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#6d28d9" BGCOLOR="#f1ebfd">
+    <TR><TD BGCOLOR="#6d28d9"><FONT COLOR="white">«interface» <B>PaymentGateway</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT">checkout() · verify() · refund()</TD></TR></TABLE>>];
+  MOCK [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#6d28d9"><TR><TD><B>MockGateway</B></TD></TR></TABLE>>];
+  SSL  [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#6d28d9"><TR><TD><B>SslCommerzGateway</B><BR/><FONT POINT-SIZE="10">bKash · Nagad · card</FONT></TD></TR></TABLE>>];
+  RS [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb" BGCOLOR="#e8f0fe">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>RevenueSplitter</B> (pure)</FONT></TD></TR>
+    <TR><TD ALIGN="LEFT">+ split(amount, policy): {tutor, platform}</TD></TR></TABLE>>];
+  PP [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb" BGCOLOR="#e8f0fe">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>PricingPolicy</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT">+ priceFor(kind) · + splitFor(tutorId)</TD></TR></TABLE>>];
+  RF [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb" BGCOLOR="#e8f0fe">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>RefundService</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT">+ decide(refundId, approve, adminId)</TD></TR></TABLE>>];
+  PO [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#2563eb" BGCOLOR="#e8f0fe">
+    <TR><TD BGCOLOR="#2563eb"><FONT COLOR="white"><B>PayoutService</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT">+ monthly(month) · + toCsv(rows)</TD></TR></TABLE>>];
+  NT [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#15803d" BGCOLOR="#e7f6ec">
+    <TR><TD BGCOLOR="#15803d"><FONT COLOR="white">«interface» <B>Notifier</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT">+ send(template, to, data)</TD></TR></TABLE>>];
+  AU [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#15803d" BGCOLOR="#e7f6ec">
+    <TR><TD BGCOLOR="#15803d"><FONT COLOR="white"><B>AuditLog</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT">+ record(actor, action, entity)</TD></TR></TABLE>>];
+  RV [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#52606d" BGCOLOR="#eef1f4">
+    <TR><TD><B>ReceiptView</B> (UI component)</TD></TR></TABLE>>];
+  AUTH [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#52606d" BGCOLOR="#eef1f4">
+    <TR><TD><B>AuthService</B> · <B>SearchService</B> · <B>VerificationService</B><BR/><FONT POINT-SIZE="10">moved to their own modules M1, M4, M2</FONT></TD></TR></TABLE>>];
+
+  SS -> PS [label="order"];
+  SS -> PP [label="price"];
+  SS -> RS [label="amount"];
+  SS -> NT; SS -> AU;
+  PS -> GWI;
+  MOCK -> GWI [style=dashed, arrowhead=empty, label="implements"];
+  SSL -> GWI [style=dashed, arrowhead=empty, label="implements"];
+  RF -> PS [label="paymentId"]; RF -> AU; RF -> NT;
+  PO -> RS; PO -> AU;
+  RS -> PP [label="policy", style=dotted];
+  RV -> SS [style=dotted, label="reads view model"];
+}

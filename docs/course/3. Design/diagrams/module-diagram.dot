@@ -1,0 +1,59 @@
+// Proxy Courses module / component diagram. Arrow A -> B means "A depends on (calls) B".
+digraph Modules {
+  graph [rankdir=TB, fontname="Noto Sans", fontsize=20, labelloc=t, nodesep=0.35, ranksep=0.75, pad=0.4, newrank=true, compound=true,
+         label=<<B>Proxy Courses: module diagram</B><BR/><FONT POINT-SIZE="13">arrow A → B = A depends on B · no cycles</FONT>>];
+  node  [shape=component, style=filled, fillcolor="#e8f0fe", color="#2563eb", penwidth=1.6,
+         fontname="Noto Sans", fontsize=13, margin="0.2,0.1"];
+  edge  [color="#3e4c59", penwidth=1.2, arrowsize=0.8, fontname="Noto Sans", fontcolor="#52606d"];
+
+  subgraph cluster_ui {
+    label=<<B>Presentation layer</B>>; style="rounded,filled"; fillcolor="#f5f7fa"; color="#9aa5b1"; fontsize=14;
+    UI [shape=box, style="rounded,filled", fillcolor="white", label=<<B>Web UI</B> (Next.js pages)<BR/><FONT POINT-SIZE="11">Search · Offering · Checkout · Tutor dashboard · Admin queue</FONT>>];
+    API [shape=box, style="rounded,filled", fillcolor="white", label=<<B>/api route handlers</B><BR/><FONT POINT-SIZE="11">Zod validation · session · maps errors to HTTP</FONT>>];
+  }
+
+  subgraph cluster_core {
+    label=<<B>Domain services (business rules)</B>>; style="rounded,filled"; fillcolor="#fbfcfd"; color="#9aa5b1"; fontsize=14;
+    M1 [label=<<B>M1</B> Accounts &amp; Auth>];
+    M2 [label=<<B>M2</B> Verification>];
+    M3 [label=<<B>M3</B> Offerings &amp; Content>];
+    M4 [label=<<B>M4</B> Discovery>];
+    M5 [label=<<B>M5</B> Booking<BR/><FONT POINT-SIZE="11">demos + advising</FONT>>];
+    M6 [label=<<B>M6</B> Subscriptions>];
+    M7 [label=<<B>M7</B> Payments>];
+    M8 [label=<<B>M8</B> Reviews &amp; Reports>];
+    M9 [label=<<B>M9</B> Admin &amp; Payouts>];
+  }
+
+  subgraph cluster_infra {
+    label=<<B>Shared services and adapters</B>>; style="rounded,filled"; fillcolor="#f5f7fa"; color="#9aa5b1"; fontsize=14;
+    M10 [label=<<B>M10</B> Notifications>, fillcolor="#e7f6ec", color="#15803d"];
+    M11 [label=<<B>M11</B> Audit log>, fillcolor="#e7f6ec", color="#15803d"];
+    M12 [label=<<B>M12</B> File storage>, fillcolor="#e7f6ec", color="#15803d"];
+    DB  [shape=cylinder, label=<<B>Data access</B><BR/><FONT POINT-SIZE="11">Prisma → PostgreSQL</FONT>>, fillcolor="#eef1f4", color="#52606d"];
+  }
+
+  GW  [shape=box3d, label=<«external»<BR/><B>Payment gateway</B>>, fillcolor="#fdf3e1", color="#b45309"];
+  EM  [shape=box3d, label=<«external»<BR/><B>Email service</B>>, fillcolor="#fdf3e1", color="#b45309"];
+  OBJ [shape=box3d, label=<«external»<BR/><B>Object storage</B>>, fillcolor="#fdf3e1", color="#b45309"];
+
+  UI -> API;
+  API -> M4 [lhead=cluster_core, label=<<FONT POINT-SIZE="11">  calls M1–M6, M8, M9</FONT>>];
+
+  M2 -> M1; M2 -> M12; M2 -> M10; M2 -> M11;
+  M3 -> M2; M3 -> M12;
+  M4 -> M3;
+  M5 -> M3; M5 -> M10;
+  M6 -> M3; M6 -> M7; M6 -> M10; M6 -> M11;
+  M7 -> M11; M7 -> GW;
+  M8 -> M6; M8 -> M3;
+  M9 -> M2; M9 -> M6; M9 -> M7; M9 -> M11;
+  M1 -> M10;
+  M10 -> EM;
+  M12 -> OBJ;
+
+  M7 -> DB [ltail=cluster_core, style=dashed, color="#52606d", label=<<FONT POINT-SIZE="11">every service reads / writes<BR/>through data access</FONT>>];
+
+  { rank=same; M10; M11; M12; DB; }
+  { rank=same; GW; EM; OBJ; }
+}

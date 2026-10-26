@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1782" height="830" viewBox="0 0 1782 830">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#3e4c59"/></marker>
+  <marker id="open" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10" fill="none" stroke="#3e4c59" stroke-width="1.5"/></marker>
+  <marker id="tri" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+    <path d="M0,0 L12,6 L0,12 z" fill="white" stroke="#3e4c59" stroke-width="1.3"/></marker>
+  <marker id="arrowred" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#b91c1c"/></marker>
+</defs>
+<rect x="0" y="0" width="1782" height="830" fill="white"/>
+<text x="891.0" y="36" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#1f2933">Proxy Courses: tailored life cycle (Scrum + XP, 14 weeks, 7 sprints, 2 exam gates)</text>
+<rect x="200" y="70" width="108" height="28" rx="0" fill="#eef1f4" stroke="#cbd2d9" stroke-width="1"/>
+<text x="254.0" y="89" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#52606d">W1</text>
+<rect x="308" y="70" width="108" height="28" rx="0" fill="#eef1f4" stroke="#cbd2d9" stroke-width="1"/>
+<text x="362.0" y="89" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#52606d">W2</text>
+<rect x="416" y="70" width="108" height="28" rx="0" fill="#eef1f4" stroke="#cbd2d9" stroke-width="1"/>
+<text x="470.0" y="89" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#52606d">W3</text>
+<rect x="524" y="70" width="108" height="28" rx="0" fill="#eef1f4" stroke="#cbd2d9" stroke-width="1"/>
+<text x="578.0" y="89" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#52606d">W4</text>
+<rect x="632" y="70" width="108" height="28" rx="0" fill="#eef1f4" stroke="#cbd2d9" stroke-width="1"/>
+<text x="686.0" y="89" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#52606d">W5</text>
+<rect x="740" y="70" width="108" height="28" rx="0" fill="#eef1f4" stroke="#cbd2d9" stroke-width="1"/>
+<text x="794.0" y="89" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#52606d">W6</text>
+<rect x="848" y="70" width="108" height="28" rx="0" fill="#eef1f4" stroke="#cbd2d9" stroke-width="1"/>
+<text x="902.0" y="89" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#52606d">W7</text>
+<rect x="956" y="70" width="108" height="28" rx="0" fill="#eef1f4" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1010.0" y="89" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#52606d">W8</text>
+<rect x="1064" y="70" width="108" height="28" rx="0" fill="#eef1f4" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1118.0" y="89" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#52606d">W9</text>
+<rect x="1172" y="70" width="108" height="28" rx="0" fill="#eef1f4" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1226.0" y="89" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#52606d">W10</text>
+<rect x="1280" y="70" width="108" height="28" rx="0" fill="#eef1f4" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1334.0" y="89" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#52606d">W11</text>
+<rect x="1388" y="70" width="108" height="28" rx="0" fill="#eef1f4" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1442.0" y="89" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#52606d">W12</text>
+<rect x="1496" y="70" width="108" height="28" rx="0" fill="#eef1f4" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1550.0" y="89" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#52606d">W13</text>
+<rect x="1604" y="70" width="108" height="28" rx="0" fill="#eef1f4" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1658.0" y="89" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#52606d">W14</text>
+<rect x="14" y="108" width="176" height="70" rx="6" fill="#f5f7fa" stroke="#cbd2d9" stroke-width="1"/>
+<text x="24" y="148.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Sprint (time-box)</text>
+<rect x="14" y="186" width="176" height="34" rx="6" fill="#f5f7fa" stroke="#cbd2d9" stroke-width="1"/>
+<text x="24" y="208.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Lectures</text>
+<rect x="14" y="228" width="176" height="46" rx="6" fill="#f5f7fa" stroke="#cbd2d9" stroke-width="1"/>
+<text x="24" y="256.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Course task due</text>
+<rect x="14" y="282" width="176" height="96" rx="6" fill="#f5f7fa" stroke="#cbd2d9" stroke-width="1"/>
+<text x="24" y="335.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Artefacts</text>
+<rect x="14" y="386" width="176" height="56" rx="6" fill="#f5f7fa" stroke="#cbd2d9" stroke-width="1"/>
+<text x="24" y="419.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Product build</text>
+<rect x="14" y="450" width="176" height="70" rx="6" fill="#f5f7fa" stroke="#cbd2d9" stroke-width="1"/>
+<text x="24" y="490.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Reviews</text>
+<rect x="204" y="108" width="208" height="70" rx="8" fill="#e8f0fe" stroke="#2563eb" stroke-width="2"/>
+<text x="308.0" y="134" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" fill="#2563eb">S1 · 2 weeks</text>
+<text x="308.0" y="156" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Inception &amp; process</text>
+<rect x="204" y="186" width="208" height="34" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="308.0" y="208" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#52606d">L1–2</text>
+<rect x="204" y="228" width="208" height="46" rx="6" fill="#2563eb" stroke="#2563eb" stroke-width="1.5"/>
+<text x="308.0" y="257" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="white">Task 1 · Process</text>
+<rect x="204" y="282" width="208" height="96" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="308.0" y="306.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Proposal</text>
+<text x="308.0" y="322.9" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Process-model choice</text>
+<text x="308.0" y="339.8" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Life-cycle plan</text>
+<rect x="204" y="386" width="208" height="56" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="308.0" y="419" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Repo, CI skeleton</text>
+<rect x="204" y="450" width="208" height="70" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="308.0" y="472.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Sprint review</text>
+<text x="308.0" y="487.6" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">+ retrospective</text>
+<text x="308.0" y="503.2" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Faculty viva</text>
+<rect x="420" y="108" width="208" height="70" rx="8" fill="#e7f6ec" stroke="#15803d" stroke-width="2"/>
+<text x="524.0" y="134" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" fill="#15803d">S2 · 2 weeks</text>
+<text x="524.0" y="156" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Requirements</text>
+<rect x="420" y="186" width="208" height="34" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="524.0" y="208" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#52606d">L3</text>
+<rect x="420" y="228" width="208" height="46" rx="6" fill="#15803d" stroke="#15803d" stroke-width="1.5"/>
+<text x="524.0" y="257" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="white">Task 2 · Requirements</text>
+<rect x="420" y="282" width="208" height="96" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="524.0" y="306.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">PRD v1.0 / SRS</text>
+<text x="524.0" y="322.9" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Use cases, ER,</text>
+<text x="524.0" y="339.8" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">state, DFD</text>
+<rect x="420" y="386" width="208" height="56" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="524.0" y="419" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Clickable mock-up</text>
+<rect x="420" y="450" width="208" height="70" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="524.0" y="472.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Sprint review</text>
+<text x="524.0" y="487.6" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">+ retrospective</text>
+<text x="524.0" y="503.2" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Faculty viva</text>
+<rect x="636" y="108" width="208" height="70" rx="8" fill="#f1ebfd" stroke="#6d28d9" stroke-width="2"/>
+<text x="740.0" y="134" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" fill="#6d28d9">S3 · 2 weeks</text>
+<text x="740.0" y="156" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Design &amp; metrics</text>
+<rect x="636" y="186" width="208" height="34" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="740.0" y="208" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#52606d">L4</text>
+<rect x="636" y="228" width="208" height="46" rx="6" fill="#6d28d9" stroke="#6d28d9" stroke-width="1.5"/>
+<text x="740.0" y="257" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="white">Task 3 + Task 4</text>
+<rect x="636" y="282" width="208" height="96" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="740.0" y="306.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Module design</text>
+<text x="740.0" y="322.9" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Wireframes</text>
+<text x="740.0" y="339.8" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">FP count</text>
+<rect x="636" y="386" width="208" height="56" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="740.0" y="419" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Schema + auth</text>
+<rect x="636" y="450" width="208" height="70" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="740.0" y="472.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Sprint review</text>
+<text x="740.0" y="487.6" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">+ retrospective</text>
+<text x="740.0" y="503.2" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Faculty viva</text>
+<rect x="852" y="108" width="208" height="70" rx="8" fill="#fdf3e1" stroke="#b45309" stroke-width="2"/>
+<text x="956.0" y="134" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" fill="#b45309">S4 · 2 weeks</text>
+<text x="956.0" y="156" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Quality + build 1</text>
+<rect x="852" y="186" width="208" height="34" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="956.0" y="208" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#52606d">L5</text>
+<rect x="852" y="228" width="208" height="46" rx="6" fill="#b45309" stroke="#b45309" stroke-width="1.5"/>
+<text x="956.0" y="257" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="white">Task 5 · Quality</text>
+<rect x="852" y="282" width="208" height="96" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="956.0" y="306.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Quality scenarios</text>
+<text x="956.0" y="322.9" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Availability targets</text>
+<rect x="852" y="386" width="208" height="56" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="956.0" y="419" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Verification, offers</text>
+<rect x="852" y="450" width="208" height="70" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="956.0" y="472.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Sprint review</text>
+<text x="956.0" y="487.6" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">+ retrospective</text>
+<text x="956.0" y="503.2" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Faculty viva</text>
+<rect x="1068" y="108" width="208" height="70" rx="8" fill="#e8f0fe" stroke="#2563eb" stroke-width="2"/>
+<text x="1172.0" y="134" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" fill="#2563eb">S5 · 2 weeks</text>
+<text x="1172.0" y="156" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Testing + build 2</text>
+<rect x="1068" y="186" width="208" height="34" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1172.0" y="208" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#52606d">L5</text>
+<rect x="1068" y="228" width="208" height="46" rx="6" fill="#2563eb" stroke="#2563eb" stroke-width="1.5"/>
+<text x="1172.0" y="257" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="white">Task 6 · Testing</text>
+<rect x="1068" y="282" width="208" height="96" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1172.0" y="306.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Test plan</text>
+<text x="1172.0" y="322.9" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Test cases (WB/BB)</text>
+<rect x="1068" y="386" width="208" height="56" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1172.0" y="419" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">M1 core flow demo</text>
+<rect x="1068" y="450" width="208" height="70" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1172.0" y="472.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Sprint review</text>
+<text x="1172.0" y="487.6" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">+ retrospective</text>
+<text x="1172.0" y="503.2" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Faculty viva</text>
+<rect x="1284" y="108" width="208" height="70" rx="8" fill="#e7f6ec" stroke="#15803d" stroke-width="2"/>
+<text x="1388.0" y="134" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" fill="#15803d">S6 · 2 weeks</text>
+<text x="1388.0" y="156" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Project mgmt + build 3</text>
+<rect x="1284" y="186" width="208" height="34" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1388.0" y="208" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#52606d">L6–7</text>
+<rect x="1284" y="228" width="208" height="46" rx="6" fill="#15803d" stroke="#15803d" stroke-width="1.5"/>
+<text x="1388.0" y="257" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="white">Task 7 · Estimation</text>
+<rect x="1284" y="282" width="208" height="96" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1388.0" y="306.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">COCOMO, PERT</text>
+<text x="1388.0" y="322.9" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">WBS, Gantt, EVA</text>
+<rect x="1284" y="386" width="208" height="56" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1388.0" y="419" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">M2 features</text>
+<rect x="1284" y="450" width="208" height="70" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1388.0" y="472.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Sprint review</text>
+<text x="1388.0" y="487.6" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">+ retrospective</text>
+<text x="1388.0" y="503.2" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Faculty viva</text>
+<rect x="1500" y="108" width="208" height="70" rx="8" fill="#f1ebfd" stroke="#6d28d9" stroke-width="2"/>
+<text x="1604.0" y="134" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" fill="#6d28d9">S7 · 2 weeks</text>
+<text x="1604.0" y="156" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Risk &amp; release</text>
+<rect x="1500" y="186" width="208" height="34" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1604.0" y="208" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#52606d">L8</text>
+<rect x="1500" y="228" width="208" height="46" rx="6" fill="#6d28d9" stroke="#6d28d9" stroke-width="1.5"/>
+<text x="1604.0" y="257" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="white">Task 8 · Risk</text>
+<rect x="1500" y="282" width="208" height="96" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1604.0" y="306.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Risk register, RMMM</text>
+<text x="1604.0" y="322.9" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Final report</text>
+<rect x="1500" y="386" width="208" height="56" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1604.0" y="419" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#1f2933">Release candidate</text>
+<rect x="1500" y="450" width="208" height="70" rx="6" fill="white" stroke="#cbd2d9" stroke-width="1"/>
+<text x="1604.0" y="472.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Sprint review</text>
+<text x="1604.0" y="487.6" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">+ retrospective</text>
+<text x="1604.0" y="503.2" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">Faculty viva</text>
+<text x="200" y="545" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d">Inside every sprint:  Planning (day 1)  →  daily stand-up  →  pair programming + PR review (XP)  →  CI tests on every push  →  review + retro (last day)</text>
+<rect x="200" y="560" width="1512" height="30" rx="6" fill="#eef1f4" stroke="#3e4c59" stroke-width="1"/>
+<text x="956" y="580" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#1f2933">Configuration management (Lecture 6), all semester: Git branches, PR review, tagged baselines, GitHub Actions CI</text>
+<rect x="14" y="560" width="176" height="30" rx="6" fill="#f5f7fa" stroke="#cbd2d9" stroke-width="1"/>
+<text x="24" y="580" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Throughout</text>
+<rect x="14" y="604" width="176" height="150" rx="6" fill="#f5f7fa" stroke="#cbd2d9" stroke-width="1"/>
+<text x="24" y="684" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Milestones</text>
+<line x1="200.0" y1="650.0" x2="1712.0" y2="650.0" stroke="#3e4c59" stroke-width="2"/>
+<path d="M237.8,636 L250.8,650 L237.8,664 L224.8,650 z" stroke="#2563eb" stroke-width="1.5" fill="#2563eb"/>
+<text x="237.8" y="626" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#2563eb">M0 Proposal</text>
+<text x="237.8" y="684" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">approved</text>
+<path d="M632,636 L645,650 L632,664 L619,650 z" stroke="#15803d" stroke-width="1.5" fill="#15803d"/>
+<text x="632" y="626" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#15803d">M1 Requirements</text>
+<text x="632" y="684" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">baseline v1.0</text>
+<path d="M848,636 L861,650 L848,664 L835,650 z" stroke="#6d28d9" stroke-width="1.5" fill="#6d28d9"/>
+<text x="848" y="626" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#6d28d9">M2 Design</text>
+<text x="848" y="684" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">baseline</text>
+<rect x="903.8" y="641" width="18" height="18" rx="0" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="912.8" y="712" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#b91c1c">G1 Midterm</text>
+<text x="912.8" y="728" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#b91c1c">exam gate</text>
+<path d="M1280,636 L1293,650 L1280,664 L1267,650 z" stroke="#2563eb" stroke-width="1.5" fill="#2563eb"/>
+<text x="1280" y="626" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#2563eb">M3 Core-flow</text>
+<text x="1280" y="684" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">prototype</text>
+<path d="M1496,636 L1509,650 L1496,664 L1483,650 z" stroke="#15803d" stroke-width="1.5" fill="#15803d"/>
+<text x="1496" y="626" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#15803d">M4 Test-ready</text>
+<text x="1496" y="684" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">release</text>
+<path d="M1668.8,636 L1681.8,650 L1668.8,664 L1655.8,650 z" stroke="#6d28d9" stroke-width="1.5" fill="#6d28d9"/>
+<text x="1668.8" y="626" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#6d28d9">M5 Final report</text>
+<text x="1668.8" y="684" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">+ demo</text>
+<rect x="1703.0" y="641" width="18" height="18" rx="0" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="1712.0" y="712" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#b91c1c">G2 Final</text>
+<text x="1712.0" y="728" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#b91c1c">exam gate</text>
+<path d="M210,780 L222,792 L210,804 L198,792 z" stroke="#2563eb" stroke-width="1.5" fill="#2563eb"/>
+<text x="232" y="797" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#1f2933">Milestone (artefact baselined in Git)</text>
+<rect x="530" y="783" width="18" height="18" rx="0" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="558" y="797" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#1f2933">Exam gate (no sprint work due)</text>
+<text x="820" y="797" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#52606d" font-style="italic">Week numbers are planned and move with the lecture schedule.</text>
+</svg>

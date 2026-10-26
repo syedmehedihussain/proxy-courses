@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="840" viewBox="0 0 1100 840">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#3e4c59"/></marker>
+  <marker id="open" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10" fill="none" stroke="#3e4c59" stroke-width="1.5"/></marker>
+  <marker id="tri" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+    <path d="M0,0 L12,6 L0,12 z" fill="white" stroke="#3e4c59" stroke-width="1.3"/></marker>
+  <marker id="arrowred" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#b91c1c"/></marker>
+</defs>
+<rect x="0" y="0" width="1100" height="840" fill="white"/>
+<text x="550" y="38" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#1f2933">Proxy Courses: stakeholder power–interest grid</text>
+<rect x="130.0" y="70.0" width="450.0" height="330.0" rx="0" fill="#fdf3e1" stroke="white" stroke-width="3"/>
+<text x="146.0" y="100.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" font-weight="bold" fill="#b45309">KEEP SATISFIED</text>
+<text x="146.0" y="120.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" fill="#b45309">high power · low interest</text>
+<rect x="580.0" y="70.0" width="450.0" height="330.0" rx="0" fill="#fdecec" stroke="white" stroke-width="3"/>
+<text x="596.0" y="100.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" font-weight="bold" fill="#b91c1c">MANAGE CLOSELY</text>
+<text x="596.0" y="120.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" fill="#b91c1c">high power · high interest</text>
+<rect x="130.0" y="400.0" width="450.0" height="330.0" rx="0" fill="#eef1f4" stroke="white" stroke-width="3"/>
+<text x="146.0" y="430.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" font-weight="bold" fill="#52606d">MONITOR</text>
+<text x="146.0" y="450.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" fill="#52606d">low power · low interest</text>
+<rect x="580.0" y="400.0" width="450.0" height="330.0" rx="0" fill="#e8f0fe" stroke="white" stroke-width="3"/>
+<text x="596.0" y="430.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" font-weight="bold" fill="#2563eb">KEEP INFORMED</text>
+<text x="596.0" y="450.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" fill="#2563eb">low power · high interest</text>
+<rect x="130" y="70" width="900" height="660" rx="0" fill="none" stroke="#3e4c59" stroke-width="2"/>
+<line x1="130.0" y1="730.0" x2="1050.0" y2="730.0" stroke="#3e4c59" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="130.0" y1="730.0" x2="130.0" y2="50.0" stroke="#3e4c59" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="130.0" y="750" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">0</text>
+<text x="120" y="734.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" fill="#52606d">0</text>
+<text x="310.0" y="750" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">2</text>
+<text x="120" y="602.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" fill="#52606d">2</text>
+<text x="490.0" y="750" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">4</text>
+<text x="120" y="470.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" fill="#52606d">4</text>
+<text x="670.0" y="750" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">6</text>
+<text x="120" y="338.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" fill="#52606d">6</text>
+<text x="850.0" y="750" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">8</text>
+<text x="120" y="206.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" fill="#52606d">8</text>
+<text x="1030.0" y="750" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#52606d">10</text>
+<text x="120" y="74.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" fill="#52606d">10</text>
+<text x="580.0" y="780" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" fill="#1f2933">INTEREST in the project (1–10)  →</text>
+<text x="60" y="400.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#1f2933" transform="rotate(-90 60 400.0)">POWER over the project (1–10)  →</text>
+<circle cx="994.0" cy="320.8" r="8" fill="#1f2933" stroke="white" stroke-width="2"/>
+<text x="980.0" y="325.8" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="end" font-weight="normal" fill="#1f2933">S1 Learners</text>
+<circle cx="931.0" cy="268.00000000000006" r="8" fill="#1f2933" stroke="white" stroke-width="2"/>
+<text x="917.0" y="273.00000000000006" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="end" font-weight="normal" fill="#1f2933">S2 Tutors</text>
+<circle cx="850.0" cy="136.0" r="8" fill="#1f2933" stroke="white" stroke-width="2"/>
+<text x="836.0" y="141.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="end" font-weight="normal" fill="#1f2933">S3 Course faculty (evaluator)</text>
+<circle cx="1003.0" cy="195.4000000000001" r="8" fill="#1f2933" stroke="white" stroke-width="2"/>
+<text x="989.0" y="200.4000000000001" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="end" font-weight="normal" fill="#1f2933">S4 Project team / admins</text>
+<circle cx="508.00000000000006" cy="136.0" r="8" fill="#1f2933" stroke="white" stroke-width="2"/>
+<text x="494.00000000000006" y="141.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="end" font-weight="normal" fill="#1f2933">S5 IUB administration &amp; CSE dept</text>
+<circle cx="310.0" cy="268.00000000000006" r="8" fill="#1f2933" stroke="white" stroke-width="2"/>
+<text x="324.0" y="273.00000000000006" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">S6 Payment gateway provider</text>
+<circle cx="472.0" cy="334.0" r="8" fill="#1f2933" stroke="white" stroke-width="2"/>
+<text x="486.0" y="339.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">S7 Faculty of tutored courses</text>
+<circle cx="688.0" cy="485.8" r="8" fill="#1f2933" stroke="white" stroke-width="2"/>
+<text x="702.0" y="490.8" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">S8 Faculty advisors</text>
+<circle cx="778.0" cy="545.2" r="8" fill="#1f2933" stroke="white" stroke-width="2"/>
+<text x="792.0" y="550.2" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">S9 Club executives</text>
+<circle cx="670.0" cy="598.0" r="8" fill="#1f2933" stroke="white" stroke-width="2"/>
+<text x="684.0" y="603.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">S10 Parents / guardians</text>
+<circle cx="400.0" cy="598.0" r="8" fill="#1f2933" stroke="white" stroke-width="2"/>
+<text x="414.0" y="603.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">S11 Private coaching centres</text>
+<circle cx="310.0" cy="479.2" r="8" fill="#1f2933" stroke="white" stroke-width="2"/>
+<text x="324.0" y="484.2" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">S12 IUB IT services (email)</text>
+</svg>

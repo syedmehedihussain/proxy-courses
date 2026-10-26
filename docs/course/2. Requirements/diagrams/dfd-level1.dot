@@ -1,0 +1,55 @@
+// Level-1 DFD for the core process "0. Subscribe to an offering" (Yourdon/DeMarco notation).
+digraph DFD1 {
+  graph [rankdir=LR, fontname="Noto Sans", fontsize=20, labelloc=t, nodesep=0.55, ranksep=1.0, pad=0.4,
+         label=<<B>Proxy Courses: Level-1 DFD, process 0 "Subscribe to an offering"</B><BR/><FONT POINT-SIZE="13">circle = process · rectangle = external entity · open box = data store</FONT>>];
+  node [fontname="Noto Sans", fontsize=13];
+  edge [fontname="Noto Sans", fontsize=11, color="#3e4c59", fontcolor="#1f2933", penwidth=1.3, arrowsize=0.9];
+
+  // external entities
+  node [shape=box, style=filled, fillcolor="#eef1f4", color="#3e4c59", penwidth=1.6, margin="0.2,0.12"];
+  Learner [label=<<B>Learner</B>>];
+  Gateway [label=<<B>Payment gateway</B><BR/><FONT POINT-SIZE="11">bKash · Nagad · card</FONT>>];
+  Tutor   [label=<<B>Tutor</B>>];
+  Email   [label=<<B>Email service</B>>];
+
+  // processes
+  node [shape=circle, style=filled, fillcolor="#e8f0fe", color="#2563eb", penwidth=1.8, fixedsize=true, width=1.75];
+  P1 [label=<<B>1.0</B><BR/>Find &amp;<BR/>select offering>];
+  P2 [label=<<B>2.0</B><BR/>Create<BR/>subscription<BR/>order>];
+  P3 [label=<<B>3.0</B><BR/>Process<BR/>payment>];
+  P4 [label=<<B>4.0</B><BR/>Activate access<BR/>&amp; split revenue>];
+  P5 [label=<<B>5.0</B><BR/>Send<BR/>notifications>];
+
+  // data stores (open-ended boxes)
+  node [shape=plain, style="", fixedsize=false, width=0];
+  D1 [label=<<TABLE BORDER="0" CELLBORDER="1" SIDES="TB" CELLPADDING="6" COLOR="#15803d"><TR><TD BGCOLOR="#e7f6ec"><B>D1</B> | Offerings</TD></TR></TABLE>>];
+  D2 [label=<<TABLE BORDER="0" CELLBORDER="1" SIDES="TB" CELLPADDING="6" COLOR="#15803d"><TR><TD BGCOLOR="#e7f6ec"><B>D2</B> | Users</TD></TR></TABLE>>];
+  D3 [label=<<TABLE BORDER="0" CELLBORDER="1" SIDES="TB" CELLPADDING="6" COLOR="#15803d"><TR><TD BGCOLOR="#e7f6ec"><B>D3</B> | Subscriptions</TD></TR></TABLE>>];
+  D4 [label=<<TABLE BORDER="0" CELLBORDER="1" SIDES="TB" CELLPADDING="6" COLOR="#15803d"><TR><TD BGCOLOR="#e7f6ec"><B>D4</B> | Payments</TD></TR></TABLE>>];
+  D5 [label=<<TABLE BORDER="0" CELLBORDER="1" SIDES="TB" CELLPADDING="6" COLOR="#15803d"><TR><TD BGCOLOR="#e7f6ec"><B>D5</B> | Settings (prices, split %)</TD></TR></TABLE>>];
+
+  Learner -> P1 [label="course code"];
+  D1 -> P1 [label="offering details,\nrating, demo info"];
+  P1 -> Learner [label="matching offerings"];
+  P1 -> P2 [label="chosen offering_id"];
+  Learner -> P2 [label="subscribe request,\npayment method"];
+  D2 -> P2 [label="learner status\n(verified?)"];
+  D5 -> P2 [label="price (৳500)"];
+  P2 -> D3 [label="subscription\n(PENDING)"];
+  P2 -> P3 [label="payment order\n(amount, method)"];
+  P3 -> Gateway [label="checkout request"];
+  Gateway -> P3 [label="callback:\ntxn id, status, signature"];
+  P3 -> D4 [label="payment record\n(PAID / FAILED)"];
+  P3 -> P4 [label="confirmed payment"];
+  D5 -> P4 [label="split % (70/30)"];
+  P4 -> D3 [label="status = ACTIVE"];
+  P4 -> D4 [label="tutor_share,\nplatform_share"];
+  P4 -> P5 [label="activation event"];
+  P5 -> Email [label="receipt +\nnew-subscriber notice"];
+  Email -> Learner [label="receipt email", style=dashed];
+  Email -> Tutor [label="new subscriber email", style=dashed];
+
+  { rank=same; Learner; }
+  { rank=same; D1; D2; }
+  { rank=same; Gateway; D4; }
+}

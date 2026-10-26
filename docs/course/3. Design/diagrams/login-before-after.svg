@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1290" viewBox="0 0 1240 1290">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#3e4c59"/></marker>
+  <marker id="open" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10" fill="none" stroke="#3e4c59" stroke-width="1.5"/></marker>
+  <marker id="tri" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+    <path d="M0,0 L12,6 L0,12 z" fill="white" stroke="#3e4c59" stroke-width="1.3"/></marker>
+  <marker id="arrowred" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#b91c1c"/></marker>
+</defs>
+<rect x="0" y="0" width="1240" height="1290" fill="white"/>
+<text x="620" y="36" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#1f2933">Login screen: flawed version and corrected version</text>
+<rect x="50" y="100" width="410" height="864" rx="36" fill="#d9dee4" stroke="#1f2933" stroke-width="2"/>
+<rect x="60" y="110" width="390" height="844" rx="26" fill="white" stroke="#9aa5b1" stroke-width="1"/>
+<text x="84" y="136" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="bold" fill="#52606d">9:41</text>
+<text x="426" y="136" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" fill="#52606d">4G ▮▮▮</text>
+<text x="255.0" y="84" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold" fill="#1f2933">BEFORE (flawed)</text>
+<rect x="155" y="180" width="200" height="150" rx="8" fill="#dfe3e8" stroke="none" stroke-width="1.5"/>
+<text x="255" y="262" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold" fill="#52606d">BIG LOGO</text>
+<circle cx="365" cy="190" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="365" y="195" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">1</text>
+<rect x="100" y="380" width="310" height="40" rx="2" fill="white" stroke="#d5d9de" stroke-width="1"/>
+<text x="112" y="406" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#c4c9cf">Username</text>
+<circle cx="420" cy="400" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="420" y="405" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">2</text>
+<rect x="100" y="434" width="310" height="40" rx="2" fill="white" stroke="#d5d9de" stroke-width="1"/>
+<text x="112" y="460" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#c4c9cf">••••••</text>
+<text x="100" y="508" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" fill="#e58e8e">Error 401</text>
+<circle cx="180" cy="503" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="180" y="508" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">3</text>
+<rect x="100" y="530" width="72" height="26" rx="2" fill="#9aa5b1" stroke="none" stroke-width="1.5"/>
+<text x="136" y="548" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="white">LOGIN</text>
+<rect x="178" y="530" width="72" height="26" rx="2" fill="#9aa5b1" stroke="none" stroke-width="1.5"/>
+<text x="214" y="548" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="white">RESET</text>
+<circle cx="270" cy="543" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="270" y="548" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">4</text>
+<rect x="100" y="590" width="310" height="70" rx="0" fill="#eef1f4" stroke="#d5d9de" stroke-width="1"/>
+<text x="255" y="632" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="normal" fill="#52606d" font-style="italic">CAPTCHA  x7Gq2</text>
+<circle cx="420" cy="610" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="420" y="615" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">5</text>
+<text x="255" y="910" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" fill="#c4c9cf">contact admin to register</text>
+<circle cx="390" cy="905" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="390" y="910" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">6</text>
+<rect x="690" y="100" width="410" height="864" rx="36" fill="#d9dee4" stroke="#1f2933" stroke-width="2"/>
+<rect x="700" y="110" width="390" height="844" rx="26" fill="white" stroke="#9aa5b1" stroke-width="1"/>
+<text x="724" y="136" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="bold" fill="#52606d">9:41</text>
+<text x="1066" y="136" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" fill="#52606d">4G ▮▮▮</text>
+<text x="895.0" y="84" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold" fill="#1f2933">AFTER (corrected)</text>
+<text x="724" y="200" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="start" font-weight="bold" fill="#2563eb">Proxy Courses</text>
+<text x="724" y="240" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="26" text-anchor="start" font-weight="bold" fill="#1f2933">Log in</text>
+<text x="724" y="266" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#52606d">Use your IUB student email</text>
+<text x="724" y="310" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">IUB email</text>
+<rect x="724" y="320" width="342" height="52" rx="8" fill="white" stroke="#b91c1c" stroke-width="1.8"/>
+<text x="738" y="352" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="start" font-weight="normal" fill="#1f2933">2310690@gmail.com</text>
+<text x="724" y="392" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#b91c1c">⚠ Use your @iub.edu.bd address</text>
+<text x="724" y="432" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Password</text>
+<rect x="724" y="442" width="342" height="52" rx="8" fill="white" stroke="#7b8794" stroke-width="1.4"/>
+<text x="738" y="474" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="start" font-weight="normal" fill="#1f2933">••••••••</text>
+<text x="1052" y="474" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="end" font-weight="bold" fill="#2563eb">Show</text>
+<text x="1066" y="522" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="end" font-weight="bold" fill="#2563eb">Forgot password?</text>
+<rect x="724" y="546" width="342" height="52" rx="10" fill="#2563eb" stroke="#2563eb" stroke-width="1.5"/>
+<text x="895.0" y="577.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="middle" font-weight="bold" fill="white">Log in</text>
+<text x="895.0" y="638" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#52606d">New to Proxy Courses?</text>
+<rect x="724" y="650" width="342" height="48" rx="10" fill="white" stroke="#2563eb" stroke-width="1.6"/>
+<text x="895.0" y="679.0" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#2563eb">Create an account</text>
+<circle cx="1092" cy="206" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="1092" y="211" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">1</text>
+<circle cx="1092" cy="340" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="1092" y="345" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">2</text>
+<circle cx="1092" cy="388" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="1092" y="393" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">3</text>
+<circle cx="1092" cy="566" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="1092" y="571" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">4</text>
+<circle cx="1092" cy="490" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="1092" y="495" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">5</text>
+<circle cx="1092" cy="670" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="1092" y="675" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">6</text>
+<text x="60" y="1024" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="start" font-weight="bold" fill="#b91c1c">Problem (before)</text>
+<text x="640" y="1024" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="15" text-anchor="start" font-weight="bold" fill="#15803d">Fix (after)</text>
+<circle cx="40" cy="1041" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="40" y="1046" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">1</text>
+<text x="60" y="1046" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">Huge logo pushes the form down</text>
+<text x="640" y="1046" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">Small wordmark; the form starts in the top third</text>
+<circle cx="40" cy="1077" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="40" y="1082" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">2</text>
+<text x="60" y="1082" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">Placeholder-only “Username”: email or student ID?</text>
+<text x="640" y="1082" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">Visible label “IUB email” + example; placeholder never replaces the label</text>
+<circle cx="40" cy="1113" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="40" y="1118" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">3</text>
+<text x="60" y="1118" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">“Error 401”, pale red, far from the field</text>
+<text x="640" y="1118" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">Plain-language error under the field it belongs to, with the fix</text>
+<circle cx="40" cy="1149" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="40" y="1154" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">4</text>
+<text x="60" y="1154" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">Tiny 72×26 LOGIN next to RESET (wipes the form)</text>
+<text x="640" y="1154" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">One full-width 342×52 primary button; RESET removed</text>
+<circle cx="40" cy="1185" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="40" y="1190" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">5</text>
+<text x="60" y="1190" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">CAPTCHA on every login; no show-password</text>
+<text x="640" y="1190" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">“Show” toggle; CAPTCHA only after 5 failed tries (rate limit)</text>
+<circle cx="40" cy="1221" r="12" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="40" y="1226" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">6</text>
+<text x="60" y="1226" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">No sign-up or reset path; low-contrast text</text>
+<text x="640" y="1226" font-family="Noto Sans, Liberation Sans, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" fill="#1f2933">“Forgot password?” + “Create an account”; all text ≥ 4.5:1 contrast</text>
+</svg>
