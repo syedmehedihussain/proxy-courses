@@ -25,7 +25,7 @@ v0.1 · 2026-10-26 · See [trd.md](trd.md) for the stack.
  External links only: YouTube (videos), Zoom / Meet (live classes)
 ```
 
-## How they talk
+## How they talk to the app
 
 - **Pages** read through the services directly (server components). **Client actions** call `/api/*`.
   Both paths go through the same service functions, so the rules live in one place.
